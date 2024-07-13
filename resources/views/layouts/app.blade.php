@@ -42,6 +42,9 @@
     <meta property="og:image" content="https://flowbite-admin-dashboard.vercel.app/images/og-image.png">
     <meta property="og:image:type" content="image/png">
     <meta name="google-site-verification" content="wn1oFpUqzZ6XoS6WgEWRF3U8ZCWRvVXryKbCWix9xD0" />
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
     <style>
         * {
             font-family: "Roboto Flex", Sans-serif
@@ -52,19 +55,11 @@
         }
     </style>
 
-    <script>
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
-                '(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('styles')
 </head>
 
-<body class="bg-white dark:bg-gray-900" style="font-family: ;">
+<body class="bg-white" style="font-family: ;">
 
     @include('layouts.header')
     @include('layouts.navigation')
@@ -72,6 +67,9 @@
     @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
     @stack('scripts')
 </body>
 

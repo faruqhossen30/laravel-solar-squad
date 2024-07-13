@@ -4,14 +4,12 @@
 @endphp
 <section>
     <div class="container mx-auto py-24">
-        <div class=" grid grid-cols-12 mx-[80px] gap-6">
+        <div id="testMonialSlider" class="owl-carousel owl-theme grid grid-cols-12 mx-[80px] gap-6">
 
             @foreach ($testmonials as $testmonial )
-
             <div class="col-span-6">
                 <div class="flex justify-center -mb-20">
-                    <img src="{{ asset('storage/'.$testmonial->thumbnail) }}" class=" h-40   object-cover  object-top  w-40 border-8 border-white rounded-full " alt=""
-                        srcset="">
+                    <img src="{{ asset('storage/'.$testmonial->thumbnail) }}" class="min-h-40 object-cover  object-top  min-w-40 border-8 border-white rounded-full " alt="" >
                 </div>
 
                 <div class="bg-[#E2E8F0] rounded-3xl py-4">
