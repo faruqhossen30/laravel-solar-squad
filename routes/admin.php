@@ -8,13 +8,16 @@ use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\FaqController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
 use App\Http\Controllers\Admin\Setting\ChatSectionController;
 use App\Http\Controllers\Admin\Setting\ContactSettingController;
 use App\Http\Controllers\Admin\Setting\SiteSettingController;
 use App\Http\Controllers\Admin\Setting\SocialmediaSettingController;
+use App\Http\Controllers\Admin\Setting\VideoSettingController;
 use App\Http\Controllers\Admin\Setting\WebsiteSettingController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\TestmonialController;
 use App\Http\Controllers\Admin\UserController;
 
@@ -30,8 +33,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('category',     CategoryController::class);
     Route::resource('faq',          FaqController::class);
     Route::resource('testmonial',   TestmonialController::class);
+    Route::resource('slider',       SliderController::class);
+    Route::resource('service',      ServiceController::class);
 
-    Route::resource('user',               UserController::class);
+    Route::resource('user',         UserController::class);
 
     Route::get('profile/', [AdminProfileController::class, 'adminProfile'])->name('admin.profile');
     Route::put('profile/update/{id}', [AdminProfileController::class, 'UpdateAdminProfile'])->name('admin.profile.update');
@@ -47,5 +52,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::post('/social-media/store', [SocialmediaSettingController::class, 'socialmediastore'])->name('socialmedia.setting.store');
         Route::get('/contact-setting', [ContactSettingController::class, 'contactsetting'])->name('contact.setting');
         Route::post('/contact-setting/store', [ContactSettingController::class, 'contactsettingstore'])->name('contact.setting.store');
+
+        Route::get('/video-setting', [VideoSettingController::class, 'videoSetting'])->name('video.setting');
+        Route::post('/video-setting/store', [VideoSettingController::class, 'videoSettingstore'])->name('video.setting.store');
     });
 });

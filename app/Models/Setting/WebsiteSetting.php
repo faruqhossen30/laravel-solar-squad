@@ -26,5 +26,6 @@ class WebsiteSetting extends Model
         'behance_link',
         'dribbble_link',
         'flickr_link',
+        'video_url',
     ];
 }

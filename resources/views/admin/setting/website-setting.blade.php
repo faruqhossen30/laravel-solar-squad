@@ -6,7 +6,7 @@
             <div class="grid grid-cols-12 gap-4 ">
 
                 <div class="col-span-12 lg:col-span-4 p-2 shadow">
-             @include('admin.setting.home-setting')
+                @include('admin.setting.home-setting')
                  </div>
                 <div class="col-span-12 lg:col-span-4 p-2 shadow">
                     {{-- <h2>Contract</h2> --}}

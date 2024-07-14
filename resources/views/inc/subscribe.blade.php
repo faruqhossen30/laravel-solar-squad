@@ -1,11 +1,11 @@
 <section class="bg-white ">
-    <div class="container mx-auto bg-gray-300 py-12 space-y-4">
+    <div class="container mx-auto bg-gray-300 py-6 lg:py-12 space-y-4">
 
         <h4 class="text-center text-2xl font-bold font-display text-[#475569]">Subscribe</h4>
         <h6 class="text-center  font-medium font-display  text-[#475569]">For Solar Squad Promotions And News Updates</h6>
 
 
-        <form class="flex items-center max-w-lg mx-auto">
+        <form class="flex items-center  justify-center px-6 lg:px-96">
             <label for="voice-search" class="sr-only">Search</label>
             <div class="relative w-full">
                 <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">

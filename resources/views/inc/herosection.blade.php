@@ -1,26 +1,32 @@
+@php
+    use App\Models\Slider;
+    $sliders = Slider::all();
+@endphp
 <section id="heroSlider" class="owl-carousel owl-theme">
-    @foreach ([1, 2, 3, 4, 5, 6] as $key => $item)
-    <section  class="w-full bg-no-repeat bg-cover" style="background-image: url('img/young-beautiful-smiling-model-using-new-laptop-citypark-sunny-day.jpg')">
-            <div class="absluate inset-0 bg-gray-900 bg-center opacity-65" style="height: 85vh">
-                <div class="container mx-auto space-y-12 py-36 ">
+    @foreach ($sliders as $key => $item)
+        <section class="w-full  bg-no-repeat bg-cover " style="background: url({{ asset('storage') . '/' . $item->thumbnail }}); background-size: cover; background-repeat: no-repeat;"
+            style="">
+            <div class="absluate inset-0 bg-gray-900 bg-center opacity-50 py-12  lg:py-24" style="height: 85vh">
+                <div class="container mx-auto space-y-8 lg:space-y-12 py-8 lg:py-42 ">
 
-                    <h1 class="text-white text-6xl font-extrabold">
-                        Earn Extra Income <br>
-                        with Ease {{ $key }}
+                    <h1 class="text-white text-3xl lg:text-6xl text-center lg:text-left font-extrabold  w-full px-3 lg:w-1/2">
+                        {{ $item->title }}
                     </h1>
 
-                    <p class="text-white text-xl  font-display font-semibold">
-                        Discover a simple way to boost your income by helping <br>others save on their utility bills. No prior sales <br>experience needed!
+                    <p class="text-white lg:text-xl  font-display font-semibold text-wrap px-4 w-full  text-center lg:text-left  lg:w-1/3  ">
+                        {{ $item->description }}
                     </p>
+                    <div class="px-4 flex justify-center lg:justify-start">
 
-                    <button href="#" class="flex items-center bg-[#2563EB] text-white  text-xl font-semibold rounded-lg px-3 py-2">
-                        Boost Your Income
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
-                    </button>
+                        <button href="#" class="flex items-center bg-[#2563EB] text-white   text-xl font-semibold rounded-lg px-6 py-2">
+                            Boost Your Income
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
-        @endforeach
+    @endforeach
 </section>

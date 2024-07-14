@@ -3,19 +3,20 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Testmonial;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
-class TestmonialController extends Controller
+class SliderController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $testmonials = Testmonial::latest()->paginate();
-        return view('admin.testmonial.index',compact('testmonials'));
+        $sliders = Slider::latest()->paginate();
+        return view('admin.slider.index',compact('sliders'));
     }
 
     /**
@@ -23,7 +24,7 @@ class TestmonialController extends Controller
      */
     public function create()
     {
-        return view('admin.testmonial.create');
+        return view('admin.slider.create');
     }
 
     /**
@@ -31,19 +32,19 @@ class TestmonialController extends Controller
      */
     public function store(Request $request)
     {
+
+        // return $request->all();
         $data=[
-            'review'      => $request->review,
+            'title'       => $request->title,
             'description' => $request->description,
-            'name'        => $request->name,
-            'address'     => $request->address,
         ];
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
+            $file_name = $request->file('thumbnail')->store('slider/thumbnail');
             $data['thumbnail'] = $file_name;
         }
-        Testmonial::create($data);
+        Slider::create($data);
         Session::flash('create');
-        return redirect()->route('testmonial.index')->with('create',' Testmonial Successfully Created');
+        return redirect()->route('slider.index')->with('create',' Slider Successfully Created');
     }
 
     /**
@@ -59,9 +60,9 @@ class TestmonialController extends Controller
      */
     public function edit(string $id)
     {
-        $testmonial = Testmonial::where('id', $id)->first();
+        $slider = Slider::where('id', $id)->first();
         // return $package;
-        return view('admin.testmonial.edit', compact('testmonial'));
+        return view('admin.slider.edit', compact('slider'));
     }
 
     /**
@@ -69,19 +70,19 @@ class TestmonialController extends Controller
      */
     public function update(Request $request, string $id)
     {
+
+        // return $request->all();
         $data = [
-            'review'      => $request->review,
+            'title'      => $request->title,
             'description' => $request->description,
-            'name'        => $request->name,
-            'address'     => $request->address,
         ];
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/blog/');
+            $file_name = $request->file('thumbnail')->store('slider/thumbnail');
             $data['thumbnail'] = $file_name;
         }
-        Testmonial::firstwhere('id', $id)->update($data);
+        Slider::firstwhere('id', $id)->update($data);
         Session::flash('warning');
-        return redirect()->route('testmonial.index')->with('warning', ' testmonial Successfully Updated');
+        return redirect()->route('slider.index')->with('warning', ' slider Successfully Updated');
     }
 
     /**
@@ -89,7 +90,9 @@ class TestmonialController extends Controller
      */
     public function destroy(string $id)
     {
-       Testmonial ::where('id', $id)->delete();
-        return redirect()->route('testmonial.index');
+        $slider = Slider::findOrFail($id);
+        Storage::delete($slider->thumbnail);
+        $slider->delete();
+        return redirect()->route('slider.index')->with('success','data successfully Deleted');
     }
 }

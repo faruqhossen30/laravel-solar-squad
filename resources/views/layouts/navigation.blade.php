@@ -1,5 +1,5 @@
 <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto lg:p-4 p-2">
         <a href="#" class="flex items-center  rtl:space-x-reverse">
             <img src="{{ asset('img/Group 2@2x.png') }}" class="h-14" alt="Flowbite Logo" />
         </a>
@@ -20,7 +20,7 @@
                         aria-current="page">Home</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#servicesection"
                         class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
                 </li>
                 <li>
@@ -28,12 +28,12 @@
                         class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Product</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#aboutussection"
                         class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
                         Us</a>
                 </li>
                 <li>
-                    <a href="#"
+                    <a href="#contactsection"
                         class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                 </li>
                 <li class="hidden lg:block">

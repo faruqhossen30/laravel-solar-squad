@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('mobile_no')->nullable();
             $table->string('facebook_group_link')->nullable();
             $table->string('facebook_link')->nullable();
+            $table->string('video_url')->nullable();
             $table->string('x_link')->nullable();
             $table->string('instagram_link')->nullable();
             $table->string('whatsapp_link')->nullable();

@@ -8,13 +8,11 @@
         <div class="card">
             <div class="card-header">
                 <div class="p-6">
-
-                    <form action="{{ route('testmonial.update', $testmonial->id) }}" method="POST"
-                        enctype="multipart/form-data">
+                    <form action="{{ route('testmonial.update', $testmonial->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('Put')
                         <div class="grid grid-cols-12 gap-5 ">
-                            <div class="col-span-12 lg:col-span-12 bg-white dark:bg-gray-800 p-4 rounded-lg">
+                            <div class="col-span-12 lg:col-span-12 bg-white  p-4 rounded-lg">
                                 <div class="py-2">
                                     <select id="" name="review"
                                         class=" py-3 px-4 pe-9 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
@@ -27,15 +25,10 @@
                                     </select>
                                 </div>
                                 <x-form.input label=" Name" name="name" value="{{ $testmonial->name }}" />
-                                <x-form.input label=" Address" name="adddress"
-                                    value="{{ $testmonial->adddress }}" />
-
-                                    <x-form.textarea label="Project Description" name="project_description" value="{{ $testmonial->description }}"/>
-
-
-                                <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
-                                    <input class="dropify" type="file" id="myDropify" name="thumbnail "
-                                        data-default-file="{{ asset('storage/' . $testmonial->thumbnail) }}">
+                                <x-form.input label=" Address" name="address" value="{{ $testmonial->address }}" />
+                                <x-form.textarea label="Project Description" name="description" value="{{ $testmonial->description }}" />
+                                <div class="col-span-12 lg:col-span-4 bg-white  p-4 rounded-lg">
+                                    <input class="dropify" type="file" id="myDropify" name="thumbnail " data-default-file="{{ asset('storage/' . $testmonial->thumbnail) }}">
                                 </div>
                             </div>
                         </div>
@@ -46,8 +39,6 @@
         </div>
     </div>
 @endsection
-
-
 @push('styles')
     <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('css/dropify.min.css') }}">

@@ -79,12 +79,12 @@
         }
 
         .owl-nav .owl-prev:hover {
-            background-color: #FF003A !important;
+            background-color: #102830 !important;
             color: gray !important;
         }
 
         .owl-nav .owl-next:hover {
-            background-color: #FF003A !important;
+            background-color: #102830 !important;
             color: white !important;
         }
 
@@ -132,31 +132,6 @@
 
 
 @push('scripts')
-    {{--
-<script>
-    function animateValue(id, start, end, duration) {
-      let startTimestamp = null;
-      const step = (timestamp) => {
-        if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        document.getElementById(id).innerText = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      };
-      window.requestAnimationFrame(step);
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      animateValue("number1", 0, 50000, 3000);
-      animateValue("number2", 0, 1500, 3000);
-      animateValue("number3", 0, 500, 3000);
-      animateValue("number4", 0, 1, 3000); // Million এককের জন্য 1 পর্যন্ত এনিমেট করা হবে
-    });
-  </script> --}}
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -249,10 +224,10 @@
                         items: 1
                     },
                     600: {
-                        items: 3
+                        items: 2
                     },
                     1000: {
-                        items: 3
+                        items: 2
                     }
                 }
             })
