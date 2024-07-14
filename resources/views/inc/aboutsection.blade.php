@@ -9,11 +9,11 @@
                 <img src="{{ asset('img/smiling-young-pretty-girl-holding-points-cash-isolated-blue-wall.jpg') }}" class=" absolute ml-[290px]  -mt-24 border-8 rounded-2xl"
                     width="230px" height="249px" alt="" srcset="">
             </div>
-            <div class="lg:col-span-6 col-span-12 py-12 lg:py-24">
+            <div class="lg:col-span-6 col-span-12 py-12 lg:py-24" data-aos="fade-left" data-aos-duration="2000">
 
                 <div class=" space-y-6 px-6 lg:px-0 ">
 
-                    <h3 class="text-3xl font-bold font-display text-[#334155]  text-center lg:text-left">About Solar Squad</h3>
+                    <h3 class="text-3xl font-bold font-display text-[#334155]  text-center lg:text-left"  >About Solar Squad</h3>
                     <p class=" font-display capitalize text-[#475569]  text-center lg:text-left">At Solar Squad, we are committed to helping individuals like you find the best opportunities to earn extra
                         income while supporting clean energy initiatives.
                     </p>

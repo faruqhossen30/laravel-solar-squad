@@ -7,14 +7,14 @@
                 <img src="{{asset('img/Web Icon-11.png')}}" class="h-12 w-12 hidden lg:block -mt-16 " alt="" srcset="">
             </div>
 
-            <div class=" inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white hover:bg-rounded p-4 hover:rounded-xl space-x-6">
+            <div data-aos="fade-up"  data-aos-duration="1000" class=" inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white hover:bg-rounded p-4 hover:rounded-xl space-x-6">
                 <img src="{{ asset('img/patnership.png') }}" alt="" srcset="">
-                <div class="">
+                <div class="" >
                     <h4 class="text-base font-semibold font-display  text-[#334155]">Partnerships</h4>
                     <p class="font-display text-[#475569]">We partner with the best community solar <br> providers to offer you exclusive earning potential.</p>
                 </div>
             </div>
-            <div class="inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white hover:bg-rounded p-4 hover:rounded-xl space-x-6">
+            <div data-aos="fade-up"  data-aos-duration="2000" class="inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white hover:bg-rounded p-4 hover:rounded-xl space-x-6">
                 <img src="{{ asset('img/support.png') }}" alt="" srcset="">
                 <div class="">
                     <h4 class="text-base font-semibold font-display text-[#475569]">Support</h4>
@@ -22,7 +22,7 @@
                     </p>
                 </div>
             </div>
-            <div class="inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white  hover:bg-rounded p-4 hover:rounded-xl space-x-6">
+            <div data-aos="fade-up"  data-aos-duration="3000" class="inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white  hover:bg-rounded p-4 hover:rounded-xl space-x-6">
                 <img src="{{ asset('img/impact.png') }}" alt="" srcset="">
                 <div class="">
                     <h4 class="text-base font-semibold font-display text-[#475569]">Impact</h4>

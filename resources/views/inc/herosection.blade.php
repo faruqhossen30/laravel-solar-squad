@@ -4,9 +4,8 @@
 @endphp
 <section id="heroSlider" class="owl-carousel owl-theme">
     @foreach ($sliders as $key => $item)
-        <section class="w-full  bg-no-repeat bg-cover " style="background: url({{ asset('storage') . '/' . $item->thumbnail }}); background-size: cover; background-repeat: no-repeat;"
+        <section class="w-full  bg-no-repeat bg-cover " style="background: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.60)), url({{ asset('storage') . '/' . $item->thumbnail }}); background-size: cover; background-repeat: no-repeat; height: 85vh"
             style="">
-            <div class="absluate inset-0 bg-gray-900 bg-center opacity-50 py-12  lg:py-24" style="height: 85vh">
                 <div class="container mx-auto space-y-8 lg:space-y-12 py-8 lg:py-42 ">
 
                     <h1 class="text-white text-3xl lg:text-6xl text-center lg:text-left font-extrabold  w-full px-3 lg:w-1/2">
@@ -26,7 +25,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+
         </section>
     @endforeach
 </section>

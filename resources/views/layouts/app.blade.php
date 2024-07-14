@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
     <style>
         * {
             font-family: "Roboto Flex", Sans-serif
@@ -98,6 +99,10 @@
     </script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script src="{{asset('js/aos.js')}}"></script>
+    <script>
+        AOS.init();
+    </script>
 
     @stack('scripts')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
@@ -106,6 +111,7 @@
             speed: 2000,
             speedAsDuration: true
         });
+
     </script>
 </body>
 

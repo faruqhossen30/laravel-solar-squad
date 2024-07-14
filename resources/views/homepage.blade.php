@@ -135,6 +135,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
         $(document).ready(function() {
+
             $('.counter').each(function() {
                 var $this = $(this),
                     countTo = $this.attr('data-count');
