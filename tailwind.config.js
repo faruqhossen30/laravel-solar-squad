@@ -26,7 +26,7 @@ export default {
             },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-                display: ['Jost'],
+                display: ["Jost","sans-serif"],
 
             },
             colors: {

@@ -1,12 +1,12 @@
 
-<section class="bg-[#E2E8F0]"  id="aboutussection">
+<section class="bg-[#E2E8F0] overflow-x-hidden"  id="aboutussection">
     <div class="container mx-auto">
         <div class="grid grid-cols-12 lg:gap-3">
             <div class="lg:col-span-6 lg:py-24 hidden lg:block">
                 <div class="relative">
-                    <img src="{{ asset('img/solar-panels-system-installed-lush-green-valley 1.png') }}" width="430px" class="rounded-2xl" alt="" srcset="">
+                    <img src="{{ asset('img/solar-panels-system-install.jpg') }}" width="430px" class="rounded-2xl" alt="" srcset="">
                 </div>
-                <img src="{{ asset('img/smiling-young-pretty-girl-holding-points-cash-isolated-blue-wall.jpg') }}" class=" absolute ml-[290px]  -mt-24 border-8 rounded-2xl"
+                <img src="{{ asset('img/money-hand.jpg') }}" class=" absolute ml-[290px]  -mt-24 border-8 rounded-2xl"
                     width="230px" height="249px" alt="" srcset="">
             </div>
             <div class="lg:col-span-6 col-span-12 py-12 lg:py-24" data-aos="fade-left" data-aos-duration="2000">

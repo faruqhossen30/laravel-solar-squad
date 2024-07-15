@@ -31,6 +31,8 @@ class TestmonialController extends Controller
      */
     public function store(Request $request)
     {
+
+         // return $request->all();
         $data=[
             'review'      => $request->review,
             'description' => $request->description,
@@ -38,7 +40,7 @@ class TestmonialController extends Controller
             'address'     => $request->address,
         ];
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
+            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail/');
             $data['thumbnail'] = $file_name;
         }
         Testmonial::create($data);
@@ -69,6 +71,8 @@ class TestmonialController extends Controller
      */
     public function update(Request $request, string $id)
     {
+
+        // return $request->all();
         $data = [
             'review'      => $request->review,
             'description' => $request->description,
@@ -76,7 +80,7 @@ class TestmonialController extends Controller
             'address'     => $request->address,
         ];
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/blog/');
+            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail/');
             $data['thumbnail'] = $file_name;
         }
         Testmonial::firstwhere('id', $id)->update($data);

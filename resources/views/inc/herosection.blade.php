@@ -8,16 +8,16 @@
             style="">
                 <div class="container mx-auto space-y-8 lg:space-y-12 py-8 lg:py-42 ">
 
-                    <h1 class="text-white text-3xl lg:text-6xl text-center lg:text-left font-extrabold  w-full px-3 lg:w-1/2">
+                    <h1 class="text-white text-3xl lg:text-6xl text-center lg:text-left font-extrabold animate__animated animate__slideInDown w-full px-3 lg:w-1/2">
                         {{ $item->title }}
                     </h1>
 
-                    <p class="text-white lg:text-xl  font-display font-semibold text-wrap px-4 w-full  text-center lg:text-left  lg:w-1/3  ">
+                    <p class="text-white lg:text-xl  font-display font-semibold text-wrap px-4 w-full  text-center lg:text-left  lg:w-1/3 animate__animated animate__zoomIn ">
                         {{ $item->description }}
                     </p>
                     <div class="px-4 flex justify-center lg:justify-start">
 
-                        <button href="#" class="flex items-center bg-[#2563EB] text-white   text-xl font-semibold rounded-lg px-6 py-2">
+                        <button href="#"onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="flex items-center bg-[#2563EB] text-white   text-xl font-semibold rounded-lg px-6 py-2">
                             Boost Your Income
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4  font-bold">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

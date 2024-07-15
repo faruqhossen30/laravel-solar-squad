@@ -5,10 +5,13 @@
 
 <section class="container mx-auto py-10">
 
-    <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-gray-200 rounded-t-xl" class=" px-3 divide-y">
+    <div id="accordion-color" data-accordion="collapse"  data-active-classes="bg-gray-200 rounded-t-xl" class=" px-3 divide-y">
 
         @foreach ($faqs as $key => $faq)
-            <h2 id="accordion-color-heading-{{ $faq->id }}">
+            <h2 id="accordion-color-heading-{{ $faq->id }}"  data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-sine">
                 <button type="button"
                     class="flex items-start justify-between w-full p-4 font-medium rtl:text-right text-gray-500  hover:bg-gray-200  gap-2"
                     data-accordion-target="#accordion-color-body-{{ $faq->id }}" aria-expanded="true" aria-controls="accordion-color-body-{{ $faq->id }}">
@@ -19,7 +22,10 @@
                 </button>
             </h2>
             <div id="accordion-color-body-{{ $faq->id }}" class="@if ($key != 0) hidden @endif mb-5 font-display bg-gray-200 rounded-b-xl"
-                aria-labelledby="accordion-color-heading-{{ $faq->id }}">
+                aria-labelledby="accordion-color-heading-{{ $faq->id }}" data-aos="fade-right"
+                data-aos-offset="600"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-sine">
                 <div class="p-3">
                     <p class="mb-2   text-[#475569i1] font-normal text-sm capitalize">{{ $faq->answer }}</p>
                 </div>

@@ -1,5 +1,7 @@
 @extends('layouts.app')
 @section('content')
+
+
     <!----------herosection------------>
     @include('inc.herosection')
     <!----------herosection------------>
@@ -237,11 +239,10 @@
                 margin: 10,
                 nav: false,
                 dots: true,
-                items: 1
+                items: 1,
+                autoplay: true,
+                autoplaySpeed:2000,
             })
-
-
-
         })
     </script>
 @endpush

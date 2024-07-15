@@ -16,10 +16,10 @@
     {{-- Google Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     {{-- Style Sheets --}}
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="theme-color" content="#ffffff">
 
     <!-- Twitter -->
@@ -44,7 +44,21 @@
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
+
+
+<!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+{{-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return false;">Book Now</a> --}}
+<!-- Calendly link widget end -->
+
+
+
+
+
+
+
     <style>
         * {
             font-family: "Roboto Flex", Sans-serif
@@ -76,7 +90,8 @@
 
     <a href="#" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="  font-bold size-10 text-white bg-blue-600  -rotate-90 brorder rounded-full p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="  font-bold size-10 text-white bg-blue-600  -rotate-90 brorder rounded-full p-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
     </a>
@@ -99,7 +114,7 @@
     </script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script src="{{asset('js/aos.js')}}"></script>
+    <script src="{{ asset('js/aos.js') }}"></script>
     <script>
         AOS.init();
     </script>
@@ -111,7 +126,6 @@
             speed: 2000,
             speedAsDuration: true
         });
-
     </script>
 </body>
 

@@ -3,9 +3,9 @@
     $services = Service::all();
 
 @endphp
-<section class="bg-[#F1F5F9] px-6"  id="servicesection">
+<section class="bg-[#F1F5F9]"  >
     <div class="container mx-auto">
-        <div id="featureOwlSlider" class="owl-carousel owl-theme grid grid-cols-12 gap-3 py-6 lg:py-24 ">
+        <div id="featureOwlSlider" class="owl-carousel owl-theme grid grid-cols-12 gap-3 py-6 lg:py-12 ">
 
             @foreach ($services as $item)
                 <div class="col-span-4 ">

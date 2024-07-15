@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\Blog\BlogController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
@@ -37,6 +38,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('service',      ServiceController::class);
 
     Route::resource('user',         UserController::class);
+
+
+    route::get('/contact',[ContactController::class,'create'])->name('contact');
+    route::post('/contact/send',[ContactController::class,'send'])->name('contact.send');
 
     Route::get('profile/', [AdminProfileController::class, 'adminProfile'])->name('admin.profile');
     Route::put('profile/update/{id}', [AdminProfileController::class, 'UpdateAdminProfile'])->name('admin.profile.update');
