@@ -1,5 +1,5 @@
 <section class="bg-[#2563EB]">
-    <div class="container mx-auto">
+    <div class="w-full px-20 mx-auto">
         <div class="grid grid-cols-12 py-3">
             <div class="lg:col-span-3 hidden lg:block">
                 <ul class="flex  justify-start text-white space-x-6 ">
