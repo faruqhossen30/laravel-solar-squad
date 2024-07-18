@@ -1,5 +1,5 @@
 <section class="bg-[#2563EB]">
-    <div class="w-full px-20 mx-auto">
+    <div class="container">
         <div class="grid grid-cols-12 py-3">
             <div class="lg:col-span-3 hidden lg:block">
                 <ul class="flex  justify-start text-white space-x-6 ">
@@ -8,12 +8,12 @@
                 </ul>
             </div>
             <div class="lg:col-span-6 col-span-6">
-                <div class="flex lg:justify-center justify-start px-6 text-white">
+                <div class="flex justify-start lg:justify-center text-white text-start">
                     <p>info@solarsquad.us </p>
                 </div>
             </div>
             <div class="col-span-6 lg:col-span-3  lg:block ">
-                <div class="flex  justify-end lg:space-x-6 space-x-3 px-6">
+                <div class="flex  justify-end lg:space-x-6 space-x-3">
                     <a href="#">
                         <svg class="w-6 h-6  border-2 rounded-full p-1  text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             viewBox="0 0 24 24">

@@ -1,6 +1,6 @@
 <section>
-    <nav class="px-20 border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex flex-wrap items-center justify-between mx-auto lg:p-4 p-2">
+    <nav class="container border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-2">
             <a href="{{route('homepage')}}" class="flex items-center  rtl:space-x-reverse">
                 <img src="{{ asset('img/Group 2@2x.png') }}" class="h-14" alt="Flowbite Logo" />
             </a>
