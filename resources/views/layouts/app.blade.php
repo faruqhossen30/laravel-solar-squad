@@ -47,17 +47,11 @@
     <link rel="stylesheet" href="{{ asset('css/aos.css') }}">
 
 
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-{{-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return false;">Book Now</a> --}}
-<!-- Calendly link widget end -->
-
-
-
-
-
-
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    {{-- <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return false;">Book Now</a> --}}
+    <!-- Calendly link widget end -->
 
     <style>
         * {
@@ -88,13 +82,13 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
-    <a href="#" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
+    <button type="button" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="  font-bold size-10 text-white bg-blue-600  -rotate-90 brorder rounded-full p-2">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
-    </a>
+    </button>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function() {

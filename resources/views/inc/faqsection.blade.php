@@ -10,7 +10,7 @@
         @foreach ($faqs as $key => $faq)
             <h2 id="accordion-color-heading-{{ $faq->id }}"  data-aos="fade-right"
                 data-aos-offset="600"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-easing="ease-in-sine">
                 <button type="button"
                     class="flex items-start justify-between w-full p-4 font-medium rtl:text-right text-gray-500  hover:bg-gray-200  gap-2"

@@ -9,7 +9,6 @@
                     <h1 class="text-[#F8FAFC]  text-4xl  leading-normal lg:text-[72px] text-left font-extrabold animate__animated animate__slideInDown w-full px-3 lg:w-1/2">
                         {{ $item->title }}
                     </h1>
-
                     <p class="text-[#F8FAFC] lg:text-2xl font-display font-normal text-wrap px-4 w-full pb-5 text-left lg:w-1/3 animate__animated animate__zoomIn ">
                         {{ $item->description }}
                     </p>

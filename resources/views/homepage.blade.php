@@ -4,25 +4,25 @@
     @include('inc.herosection')
     <!----------herosection------------>
     <!---------frature section--------->
-    {{-- @include('inc.featuresection') --}}
+    @include('inc.featuresection')
     <!---------frature section--------->
     <!---------about section--------->
     @include('inc.aboutsection')
     <!---------about section--------->
     <!--------stand out----------->
-    {{-- @include('inc.standout') --}}
+    @include('inc.standout')
     <!--------stand out----------->
     <!-------video section-------->
-    {{-- @include('inc.videosection') --}}
+    @include('inc.videosection')
     <!-------video section-------->
     <!-------------status section--------->
-    {{-- @include('inc.statussection') --}}
+    @include('inc.statussection')
     <!-------------status section--------->
     <!--------------nextstep section---------->
-    {{-- @include('inc.nextstep') --}}
+    @include('inc.nextstep')
     <!--------------nextstep section---------->
     <!-------------testmonial --------------->
-    {{-- @include('inc.testmonial') --}}
+    @include('inc.testmonial')
     <!-------------testmonial --------------->
     <!----------------title section--------------->
     @include('inc.titlesection')
@@ -225,7 +225,7 @@
                         items: 1
                     },
                     600: {
-                        items: 2
+                        items: 1
                     },
                     1000: {
                         items: 2

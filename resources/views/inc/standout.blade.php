@@ -1,6 +1,6 @@
-<section class=" lg:bg-[#F8FAFC]" id="overview">
-    <div class="container mx-auto  flex items-center ">
-        <div class="lg:bg-[#E2E8F0] rounded-xl  lg:my-12 lg:mx-36  px-16 space-y-3 py-10 lg:py-24">
+<section class="lg:bg-[#F8FAFC]" id="overview">
+    <div class="container flex max-w-7xl items-center relative">
+        <div class="lg:w-3/5 lg:bg-[#E2E8F0] rounded-xl flex flex-col  lg:my-12 px-16 space-y-3 py-10 lg:py-24">
 
             <div class="lg:text-[40px] font-bold text-3xl flex justify-between  ">
                 <h3 class="font-display text-[#334155] text-center">Stand Out With Us?</h3>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div data-aos="fade-up"  data-aos-duration="3000" class="inline-flex items-start hover:bg-[#E2E8F0] lg:hover:bg-white  hover:bg-rounded p-4 hover:rounded-xl space-x-6">
-                <img src="{{ asset('img/impact.png') }}" alt="" srcset="">
+                <img src="{{ asset('img/impact.png') }}" class="" alt="" srcset="">
                 <div class="">
                     <h4 class="text-base font-semibold font-display text-[#475569]">Impact</h4>
                     <p class="font-display text-[#475569]">By joining us, you'll not only enhance your income <br>but also contribute to a greener future for <br>generations to
@@ -33,16 +33,14 @@
             </div>
 
 
-            <div class="flex justify-center lg:justify-end px-16 pt-6">
+            <div class="flex justify-start lg:justify-end px-16 pt-6">
                 <a href="#" class="bg-blue-700 px-3 py-2 rounded-lg text-white">
                     Learn More
                 </a>
             </div>
         </div>
-
-
-        <div class="lg:py-12 hidden lg:block">
-            <img src="{{ asset('img/customer-support.jpg') }}" class="rounded-xl h-[530px]  -ml-48" width="1200px" alt="" srcset="">
+        <div class="absolute hidden lg:block right-0 top-24 mr-48">
+            <img src="{{ asset('img/customer-support.jpg') }}" class="rounded-xl w-full" alt="" >
         </div>
     </div>
 </section>

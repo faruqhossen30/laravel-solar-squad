@@ -1,4 +1,4 @@
-<section class="bg-white  overflow-x-hidden ">
+<section class="bg-gray-300 w-full  overflow-x-hidden ">
     <div class="container mx-auto bg-gray-300 py-6 lg:py-12 space-y-4">
 
         <h4 class="text-center text-2xl font-bold font-display text-[#475569] animate__animated animate__heartBeat">Subscribe</h4>

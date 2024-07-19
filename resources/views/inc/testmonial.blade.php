@@ -3,7 +3,7 @@
     $testmonials = Testmonial::all();
 @endphp
 <section>
-    <div class="container  lg:py-24 py-10  px-10">
+    <div class="container lg:py-24 py-10  px-10">
         <div id="testMonialSlider" class="owl-carousel owl-theme grid grid-cols-12  lg:mx-[80px] ">
 
             @foreach ($testmonials as $testmonial)
@@ -13,7 +13,7 @@
                             class="min-h-40 max-h-36 object-cover  object-top  min-w-40 max-w-36 border-8 border-white rounded-full " alt="">
                     </div>
 
-                    <div class="bg-[#E2E8F0] rounded-3xl py-4 h-72 ">
+                    <div class="bg-[#E2E8F0] rounded-3xl py-4">
 
                         <div class="flex justify-between px-6 pt-14">
                             {{-- <img src="{{ asset('img/quate-down.png') }}" class="h-8 w-8" alt="" srcset=""> --}}
@@ -46,8 +46,8 @@
                                                                c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
 
-                            <div class="py-4">
-                                <span class="text-xl font-extrabold font-display  text-[#475569]">{{ $testmonial->name }}</span>
+                            <div class="py-8">
+                                <span class="text-3xl font-extrabold font-display  text-[#475569]">{{ $testmonial->name }}</span>
                                 <p class="text-center  font-display text-[#475569]">{{ $testmonial->address }}</p>
                             </div>
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 rotate-180" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -79,10 +79,10 @@
                                                            c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="px-6  text-center text-sm font-normal font-display text-[#475569]">
+                        <p class="lg:px-12 text-center text-xl font-normal font-display text-[#475569]">
                             <?php echo substr($testmonial->description, 0, 220); ?></p>
 
-                        <div class="flex justify-center  pt-5 ">
+                        <div class="flex justify-center py-8">
 
                             @for ($i = 1; $i <= $testmonial->review; $i++)
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-[#2563EB]">
