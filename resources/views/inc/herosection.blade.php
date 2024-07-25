@@ -13,7 +13,7 @@
                         {{ $item->description }}
                     </p>
                     <div class="px-4 flex justify-start">
-                        <button href="#"onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="flex items-center bg-[#2563EB] text-white text-sm lg:text-xl font-semibold rounded-md px-4 lg:px-8 py-2 lg:py-5 space-x-2">
+                        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="flex items-center bg-[#2563EB] text-white text-sm lg:text-xl font-semibold rounded-md px-4 lg:px-8 py-2 lg:py-5 space-x-2">
                             <span>Boost Your Income</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5  font-bold">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
