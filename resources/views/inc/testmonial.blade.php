@@ -8,14 +8,14 @@
 
             @foreach ($testmonials as $testmonial)
                 <div class="col-span-12 lg:col-span-6  ">
-                    <div class="flex justify-center -mb-20">
+                    <div class="flex justify-center -mb-[110px]">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
                             class=" object-cover  object-top max-h-[220px] min-w-[220px]   border-8 border-white rounded-full " alt="">
                     </div>
 
-                    <div class="bg-[#E2E8F0] rounded-3xl ">
+                    <div class="bg-[#E2E8F0] rounded-3xl">
 
-                        <div class="flex justify-between px-6 pt-12">
+                        <div class="flex items-center justify-between px-10 pt-24">
                             {{-- <img src="{{ asset('img/quate-down.png') }}" class="h-8 w-8" alt="" srcset=""> --}}
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">

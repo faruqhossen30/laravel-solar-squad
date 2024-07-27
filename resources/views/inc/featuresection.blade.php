@@ -16,7 +16,7 @@
                                 <h3 class="text-[26px] font-semibold font-display text-[#334155]">{{$item->title}}</h3>
                                 <p class="text-xl font-normal font-display text-[#334155]">{{$item->description}}</p>
                                 <div class="flex justify-center lg:justify-end py-6 mr-2">
-                                    <button class="bg-[#2563EB] text-white px-6 text-lg font-semibold py-2 rounded-lg">Learn More</button>
+                                    <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="bg-[#2563EB] text-white px-6 text-lg font-semibold py-2 rounded-lg">Learn More</button>
                                 </div>
                             </div>
                         </div>

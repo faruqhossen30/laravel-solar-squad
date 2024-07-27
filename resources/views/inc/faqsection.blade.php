@@ -5,15 +5,15 @@
 
 <section class="lg:w-[1480px] mx-auto lg:py-20">
 
-    <div id="accordion-color" data-accordion="collapse"  data-active-classes="bg-gray-200 rounded-t-xl" class=" px-3 divide-y">
+    <div id="accordion-color" data-accordion="collapse"  data-active-classes="bg-gray-200 rounded-t-xl" data-inactive-classes="my-5" class=" px-3 divide-y">
 
         @foreach ($faqs as $key => $faq)
-            <h2 id="accordion-color-heading-{{ $faq->id }}"
+            <h2 id="accordion-color-heading-{{ $faq->id }}" class=""
                 data-aos-offset="600"
                 data-aos-duration="1000"
                >
                 <button type="button"
-                    class="flex items-start justify-between w-full lg:pt-10  lg:px-20 font-medium rtl:text-right text-gray-500  hover:bg-gray-200  gap-2"
+                    class="flex items-start justify-between w-full lg:pt-10  lg:px-20 font-medium rtl:text-right text-gray-500  gap-2"
                     data-accordion-target="#accordion-color-body-{{ $faq->id }}" aria-expanded="true" aria-controls="accordion-color-body-{{ $faq->id }}">
                     <span class=" font-display text-[#334155] text-[24px] font-semibold capitalize text-left">{{ $faq->question }}</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

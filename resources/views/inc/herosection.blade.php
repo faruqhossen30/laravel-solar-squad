@@ -6,10 +6,10 @@
     @foreach ($sliders as $key => $item)
         <section class="bg-no-repeat bg-cover flex items-center lg:h-[85vh] " style="background: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.60)), url({{ asset('storage') . '/' . $item->thumbnail }}); background-size: cover; background-repeat: no-repeat;">
                 <div class="container space-y-5 lg:space-y-8 py-8 lg:py-42 ">
-                    <h1 class="text-[#F8FAFC]  text-4xl  leading-normal lg:text-[72px] text-left font-extrabold animate__animated animate__slideInDown w-full px-3 lg:w-1/2">
+                    <h1 class="text-[#F8FAFC]  text-5xl capitalize  leading-normal lg:text-[72px] text-left font-extrabold animate__animated animate__slideInDown w-full px-3 lg:w-1/2">
                         {{ $item->title }}
                     </h1>
-                    <p class="text-[#F8FAFC] lg:text-2xl font-display font-normal text-wrap px-4 w-full pb-5 text-left lg:w-1/3 animate__animated animate__zoomIn ">
+                    <p class="text-[#F8FAFC] capitalize lg:text-[22px] font-display font-normal text-wrap px-4 w-full pb-5 text-left lg:w-1/3 animate__animated animate__zoomIn ">
                         {{ $item->description }}
                     </p>
                     <div class="px-4 flex justify-start">

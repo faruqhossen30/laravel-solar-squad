@@ -24,12 +24,12 @@
                 </div>
 
                 <div class="py-6 text-left">
-                    <a href="#" class="inline-flex justify-center items-center bg-[#2563EB] px-6 py-4  rounded-lg text-white">
+                    <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="inline-flex justify-center items-center bg-[#2563EB] px-6 py-4  rounded-lg text-white">
                         <p class="font-display text-xl">Learn More</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 mx-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
