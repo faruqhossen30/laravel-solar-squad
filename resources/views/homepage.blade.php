@@ -44,11 +44,11 @@
 
         .owl-nav .owl-next {
             position: absolute;
-            top: calc(50% - 20px);
+            top: calc(50% - 26px);
             right: 0;
-            margin-right: -20px !important;
-            width: 40px;
-            height: 40px;
+            margin-right: -26px !important;
+            width: 52px;
+            height: 52px;
             opacity: .8;
             border-radius: 50% !important;
             background-color: white !important;
@@ -60,11 +60,11 @@
 
         .owl-nav .owl-prev {
             position: absolute;
-            top: calc(50% - 20px);
+            top: calc(50% - 26px);
             left: 0;
-            margin-left: -20px !important;
-            width: 40px;
-            height: 40px;
+            margin-left: -26px !important;
+            width: 52px;
+            height: 52px;
             opacity: .8;
             border-radius: 50% !important;
             background-color: white !important;
@@ -72,6 +72,12 @@
             --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        [aria-label="Next"],[aria-label="Previous"]  {
+            /* Your CSS styles here */
+            font-size: 26px;
+            /* Example style */
         }
 
         .owl-theme .owl-nav {
@@ -198,7 +204,7 @@
 
             $('#featureOwlSlider').owlCarousel({
                 loop: true,
-                margin: 10,
+                margin: 25,
                 nav: true,
                 dots: false,
                 responsive: {
@@ -238,7 +244,7 @@
                 dots: true,
                 items: 1,
                 autoplay: true,
-                autoplaySpeed:2000,
+                autoplaySpeed: 2000,
             })
         })
     </script>
