@@ -4,8 +4,8 @@
 
 @endphp
 <section class="bg-[#F1F5F9]"  >
-    <div class=" w-[1700px] mx-auto ">
-        <div id="featureOwlSlider" class="owl-carousel owl-theme grid grid-cols-12 gap-3   py-24">
+    <div class="container mx-auto">
+        <div id="featureOwlSlider" class="owl-carousel owl-theme grid grid-cols-12 gap-3 py-24">
             @foreach ($services as $item)
                 <div class="lg:col-span-4 col-span-12">
                     <div class="space-y-3 py-12">

@@ -22,7 +22,7 @@
     @include('inc.nextstep')
     <!--------------nextstep section---------->
     <!-------------testmonial --------------->
-    @include('inc.testmonial')
+    {{-- @include('inc.testmonial') --}}
     <!-------------testmonial --------------->
     <!----------------title section--------------->
     @include('inc.titlesection')

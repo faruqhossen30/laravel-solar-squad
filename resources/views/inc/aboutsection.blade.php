@@ -1,12 +1,12 @@
 
 <section class="bg-[#E2E8F0] overflow-x-hidden"  id="aboutussection">
     <div class="container mx-auto">
-        <div class="grid grid-cols-12 lg:gap-10 lg:px-14">
+        <div class="grid grid-cols-12 lg:gap-10 px-16">
             <div class="col-span-12 lg:col-span-6 py-20 lg:py-24 relative">
                 <div class="relative ">
-                    <img src="{{ asset('img/solar-panels-system-install.jpg') }}" class="rounded-2xl w-4/5" alt="" srcset="">
+                    <img src="{{ asset('img/solar-panels-system-install.jpg') }}" class="rounded-2xl w-10/12" alt="" srcset="">
                 </div>
-                <img src="{{ asset('img/money-hand.jpg') }}" class="absolute right-0 -mt-20 lg:-mt-40 border-8 rounded-2xl w-1/2" alt="" srcset="">
+                <img src="{{ asset('img/money-hand.jpg') }}" class="absolute right-0 -mt-20 lg:-mt-40 border-8 rounded-2xl w-7/12" alt="" srcset="">
             </div>
             <div class="lg:col-span-6 col-span-12 py-12 lg:py-24 lg:pl-20 space-y-5" data-aos="fade-left" data-aos-duration="2000">
 
