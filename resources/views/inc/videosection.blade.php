@@ -2,7 +2,9 @@
     use App\Models\Setting\WebsiteSetting;
     $site = WebsiteSetting::first();
 @endphp
-<section class="bg-[#F1F5F9] py-12 lg:py-36 bg-cover object-center bg-no-repeat" style="background-image: url('img/solar.png')">
+
+<section class="bg-[#F1F5F9] pt-36">
+    <div class=" py-12 lg:py-80 bg-cover object-center bg-no-repeat" style="background-image: url('img/solar.png')">
     <div class="flex justify-center items-center">
         <span class="relative flex items-center justify-center h-24 w-24">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-transparent ring-2 ring-white opacity-75"></span>
@@ -15,7 +17,8 @@
           </span>
 
     </div>
-</section>
+</div>
 
+</section>
 
 {{-- <a class="video-popupbutton" >Open popup</a> --}}

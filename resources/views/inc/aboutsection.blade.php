@@ -1,5 +1,5 @@
 
-<section class="bg-[#E2E8F0] overflow-x-hidden"  id="aboutussection">
+<section class="bg-[#E2E8F0] overflow-x-hidden py-12"  id="aboutussection">
     <div class="container mx-auto">
         <div class="grid grid-cols-12 lg:gap-10 px-16">
             <div class="col-span-12 lg:col-span-6 py-20 lg:py-24 relative">
@@ -25,7 +25,7 @@
 
                 <div class="py-6 text-left">
                     <a href="#" class="inline-flex justify-center items-center bg-[#2563EB] px-6 py-4  rounded-lg text-white">
-                        <p class="font-display">Learn More</p>
+                        <p class="font-display text-xl">Learn More</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 mx-2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>

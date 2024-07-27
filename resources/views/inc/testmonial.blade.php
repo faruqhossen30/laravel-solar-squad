@@ -3,21 +3,21 @@
     $testmonials = Testmonial::all();
 @endphp
 <section>
-    <div class="container lg:py-24 py-10  px-10">
-        <div id="testMonialSlider" class="owl-carousel owl-theme grid grid-cols-12  lg:mx-[80px] ">
+    <div class="lg:w-[1515px] mx-auto lg:py-44 py-10  ">
+        <div id="testMonialSlider" class="owl-carousel owl-theme grid grid-cols-12   ">
 
             @foreach ($testmonials as $testmonial)
                 <div class="col-span-12 lg:col-span-6  ">
                     <div class="flex justify-center -mb-20">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
-                            class="min-h-40 max-h-36 object-cover  object-top  min-w-40 max-w-36 border-8 border-white rounded-full " alt="">
+                            class=" object-cover  object-top max-h-[220px] min-w-[220px]   border-8 border-white rounded-full " alt="">
                     </div>
 
-                    <div class="bg-[#E2E8F0] rounded-3xl py-4">
+                    <div class="bg-[#E2E8F0] rounded-3xl ">
 
-                        <div class="flex justify-between px-6 pt-14">
+                        <div class="flex justify-between px-6 pt-12">
                             {{-- <img src="{{ asset('img/quate-down.png') }}" class="h-8 w-8" alt="" srcset=""> --}}
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
                                 <style type="text/css">
                                     .st0 {
@@ -47,10 +47,10 @@
                             </svg>
 
                             <div class="py-8">
-                                <span class="text-3xl font-extrabold font-display  text-[#475569]">{{ $testmonial->name }}</span>
-                                <p class="text-center  font-display text-[#475569]">{{ $testmonial->address }}</p>
+                                <span class="text-[36px] font-extrabold font-display  text-[#475569]">{{ $testmonial->name }}</span>
+                                <p class="text-center text-[24px] font-normal  font-display text-[#475569]">{{ $testmonial->address }}</p>
                             </div>
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 rotate-180" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 rotate-180" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                                 y="0px" viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
                                 <style type="text/css">
                                     .st0 {
@@ -79,10 +79,10 @@
                                                            c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="lg:px-12 text-center text-xl font-normal font-display text-[#475569]">
-                            <?php echo substr($testmonial->description, 0, 220); ?></p>
+                        <p class="lg:px-12 text-center text-[19px] font-normal font-display text-[#475569]">
+                            <?php echo substr($testmonial->description, 0, 315); ?></p>
 
-                        <div class="flex justify-center py-8">
+                        <div class="flex justify-center py-6">
 
                             @for ($i = 1; $i <= $testmonial->review; $i++)
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-[#2563EB]">

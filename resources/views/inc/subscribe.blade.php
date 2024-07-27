@@ -1,8 +1,8 @@
-<section class="bg-gray-300 w-full  overflow-x-hidden ">
-    <div class="container mx-auto bg-gray-300 py-6 lg:py-12 space-y-4">
+<section class="bg-gray-300 rounded-lg w-[1380px] mx-auto overflow-x-hidden mb-28">
+    <div class="container mx-auto bg-gray-300 py-6 lg:py-[90px] space-y-4">
 
-        <h4 class="text-center text-2xl font-bold font-display text-[#475569] animate__animated animate__heartBeat">Subscribe</h4>
-        <h6 class="text-center  font-medium font-display  text-[#475569] animate__animated animate__flipInY">For Solar Squad Promotions And News Updates</h6>
+        <h4 class="text-center text-3xl font-bold font-display text-[#475569] animate__animated animate__heartBeat">Subscribe</h4>
+        <h6 class="text-center capitalize text-[19px]  font-medium font-display  text-[#475569] animate__animated animate__flipInX">For Solar Squad Promotions And News Updates</h6>
 
 
         <div  class="flex items-center  justify-center px-6 lg:px-96">

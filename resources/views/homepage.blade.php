@@ -22,7 +22,7 @@
     @include('inc.nextstep')
     <!--------------nextstep section---------->
     <!-------------testmonial --------------->
-    {{-- @include('inc.testmonial') --}}
+    @include('inc.testmonial')
     <!-------------testmonial --------------->
     <!----------------title section--------------->
     @include('inc.titlesection')
@@ -74,11 +74,41 @@
             box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
         }
 
-        [aria-label="Next"],[aria-label="Previous"]  {
+        [aria-label="Next"],
+        [aria-label="Previous"] {
             /* Your CSS styles here */
             font-size: 26px;
             /* Example style */
         }
+
+
+        /* testmonial */
+       #testMonialSlider .owl-nav .owl-next {
+            position: absolute;
+            top: calc(50% - -52px);
+            right: 0;
+            margin-right: -100px !important;
+            width: 52px;
+            height: 52px;
+            opacity: .8;
+            border-radius: 50% !important;
+            background-color: white !important;
+            color: gray !important;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+        #testMonialSlider .owl-nav .owl-prev {
+            top: calc(50% - -52px);
+            left: 0;
+            margin-left: -100px !important;
+            color: gray !important;
+        }
+
+
+
+        /* testmonial */
 
         .owl-theme .owl-nav {
             margin-top: 0px;
@@ -91,7 +121,12 @@
 
         .owl-nav .owl-next:hover {
             background-color: #102830 !important;
-            color: white !important;
+            color: gray !important;
+        }
+
+        #testMonialSlider  .owl-nav .owl-next:hover {
+            background-color: #102830 !important;
+            color: gray !important;
         }
 
         .owl-carousel .owl-item img {
@@ -223,7 +258,7 @@
 
             $('#testMonialSlider').owlCarousel({
                 loop: true,
-                margin: 10,
+                margin: 14,
                 nav: true,
                 dots: false,
                 responsive: {
