@@ -21,7 +21,7 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\TestmonialController;
 use App\Http\Controllers\Admin\UserController;
-
+use Illuminate\Support\Facades\Artisan;
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('role', RoleController::class);
@@ -60,5 +60,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
         Route::get('/video-setting', [VideoSettingController::class, 'videoSetting'])->name('video.setting');
         Route::post('/video-setting/store', [VideoSettingController::class, 'videoSettingstore'])->name('video.setting.store');
+    });
+
+    Route::get('create-storage-link', function () {
+        Artisan::call('storage:link');
+        return 'Storage link created successfully!';
     });
 });
