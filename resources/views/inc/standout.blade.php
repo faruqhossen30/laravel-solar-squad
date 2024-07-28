@@ -48,14 +48,16 @@
 
 
 
+
+
 <!-- Features -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-20 mx-auto">
-    <div class="relative p-6 md:p-16">
+<div class="lg:max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-20 mx-auto">
+    <div class="relative  md:p-16">
         <!-- Grid -->
         <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
 
-            <div class="mb-10 lg:mb-0 lg:col-span-6 relative">
-                <h2 class="font-display text-[#334155] lg:text-[40px] text-3xl font-bold">
+            <div class="mb-10 p-10 lg:mb-0 lg:col-span-6 relative">
+                <h2 class="font-display text-[#334155] lg:text-[40px] text-xl lg:text-start lg:text-4xl font-bold">
                     Stand Out With Us?
                 </h2>
                 <!-- Tab Navs -->
@@ -107,13 +109,13 @@
                         </span>
                     </button>
                 </nav>
-                <div class="flex justify-start lg:justify-end pt-6">
+                <div class="flex justify-end pt-6">
                     <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="bg-blue-700 text-xl px-3 py-2 rounded-lg text-white">
                         Learn More
                     </button>
                 </div>
                 <!-- End Tab Navs -->
-                <div class="hidden absolute top-0 right-10 translate-x-20 md:block lg:translate-x-20">
+                <div class="hidden absolute -top-16 right-10 translate-x-20 md:block lg:translate-x-20 -rotate-90">
                     <svg class="w-16 h-auto text-orange-500" width="121" height="135" viewBox="0 0 121 135" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
                         <path d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
@@ -122,12 +124,12 @@
                 </div>
             </div>
             <!-- End Col -->
-            <div class="lg:col-span-6">
-                <div class="relative">
+            <div class="col-span-6 lg:block hidden">
+                <div class="relative ">
                     <!-- Tab Content -->
                     <div>
                         <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
-                            <img class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20" src="{{ asset('img/customer-support.jpg') }}" alt="Features Image">
+                            <img class="shadow-xl w-full object-right shadow-gray-200 rounded-xl dark:shadow-gray-900/20" src="{{ asset('img/customer-support.jpg') }}" alt="Features Image">
                         </div>
 
                         <div id="tabs-with-card-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
@@ -153,8 +155,8 @@
         <!-- End Grid -->
 
         <!-- Background Color -->
-        <div class="absolute inset-0 grid grid-cols-12 size-full">
-            <div class="col-span-full lg:col-span-7 lg:col-start-1 bg-gray-100 w-full h-4/5 rounded-xl sm:h-3/4 lg:h-full dark:bg-neutral-800"></div>
+        <div class="absolute inset-0 grid grid-cols-12 w-full">
+            <div class="col-span-full lg:col-span-7 lg:col-start-1 bg-gray-100 w-full  h-full lg:h-full rounded-xl dark:bg-neutral-800"></div>
         </div>
         <!-- End Background Color -->
     </div>

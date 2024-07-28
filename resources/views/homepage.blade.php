@@ -83,7 +83,7 @@
 
 
         /* testmonial */
-       #testMonialSlider .owl-nav .owl-next {
+        #testMonialSlider .owl-nav .owl-next {
             position: absolute;
             top: calc(50% - -52px);
             right: 0;
@@ -108,7 +108,45 @@
 
 
 
+        #testMonialmobileSlider .owl-nav .owl-next {
+            position: absolute;
+            top: calc(50% - -25px);
+            right: 0;
+            margin-right: -26px !important;
+            width: 52px;
+            height: 52px;
+            opacity: .8;
+            border-radius: 50% !important;
+            background-color: white !important;
+            color: gray !important;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
+
+        #testMonialmobileSlider .owl-nav .owl-prev {
+            position: absolute;
+            top: calc(50% - -25px);
+            right: 0;
+            margin-right: -26px !important;
+            width: 52px;
+            height: 52px;
+            opacity: .8;
+            border-radius: 50% !important;
+            background-color: white !important;
+            color: gray !important;
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+
         /* testmonial */
+
+
+
+
+
 
         .owl-theme .owl-nav {
             margin-top: 0px;
@@ -124,7 +162,7 @@
             color: gray !important;
         }
 
-        #testMonialSlider  .owl-nav .owl-next:hover {
+        #testMonialSlider .owl-nav .owl-next:hover {
             background-color: #102830 !important;
             color: gray !important;
         }
@@ -167,6 +205,15 @@
         #heroSlider .owl-dots {
             margin-top: -50px !important;
             position: relative;
+        }
+
+
+    </style>
+
+
+    <style>
+        @media (max-width: 640px) {
+
         }
     </style>
 @endpush
@@ -257,6 +304,23 @@
 
 
             $('#testMonialSlider').owlCarousel({
+                loop: true,
+                margin: 14,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+            $('#testMonialmobileSlider').owlCarousel({
                 loop: true,
                 margin: 14,
                 nav: true,

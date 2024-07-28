@@ -82,7 +82,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
-    <button type="button" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse ">
+    <button type="button" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse  z-50 ">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="  font-bold size-10 text-white bg-blue-600  -rotate-90 brorder rounded-full p-2">

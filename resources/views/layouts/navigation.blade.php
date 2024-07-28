@@ -17,27 +17,27 @@
                     class="flex flex-col   items-center  divide-x-reverse font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
                         <a href="{{route('homepage')}}"
-                            class="block py-2 px-3 md:p-0 text-white  font bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            class="block py-2 px-6 md:p-0 text-gray-900 hover:text-white  font-display hover:bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#aboutussection"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
                             Us</a>
                     </li>
                     <li>
                         <a href="#videosection"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Overview</a>
+                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Overview</a>
                     </li>
                     <li>
                         <a href="#accordion-color"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
+                            class="block py-2 px-6 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
                     </li>
 
                     <li>
                         <!-- Modal toggle -->
                         <button data-modal-target="static-modal" data-modal-toggle="static-modal"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            class="block py-3 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             type="button">
                             Contact Us
                         </button>
@@ -49,10 +49,10 @@
                                 <!-- Modal content -->
                                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                     <!-- Modal header -->
-                                    <div class="flex items-center justify-between p-4 md:p-5 rounded-t dark:border-gray-600">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                            Contact Us
-                                        </h3>
+                                    <div class="flex items-center justify-between pt-3 pr-3 rounded-t dark:border-gray-600">
+                                        {{-- <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+Get in touch
+                                        </h3> --}}
                                         <button type="button"
                                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                             data-modal-hide="static-modal">
