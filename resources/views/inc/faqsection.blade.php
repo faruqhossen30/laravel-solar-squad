@@ -1,10 +1,10 @@
 @php
     use App\Models\Faq;
-    $faqs = Faq::all();
+    $faqs = Faq::oldest()->get();
 @endphp
 <section class=" bg-[#F1F5F9]">
     <div class="container lg:max-w-[1480px] mx-auto lg:py-20">
-        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-[#E2E8F0] rounded-t-xl" data-inactive-classes="my-5" class=" px-3 divide-y">
+        <div  data-accordion="collapse" data-active-classes="bg-[#E2E8F0] rounded-t-xl" data-inactive-classes="my-5" class=" px-3 divide-y">
             @foreach ($faqs as $key => $faq)
                 <h2 id="accordion-color-heading-{{ $faq->id }}" class="" data-aos-offset="600" data-aos-duration="1000">
                     <button type="button" class="flex items-start justify-between w-full lg:pt-10 mt-6 lg:mt-0  lg:px-20 font-medium rtl:text-right text-gray-500  gap-2"

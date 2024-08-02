@@ -6,7 +6,7 @@
 
             <div class="col-span-12 xl:col-span-6 px-5 md:px-40 xl:px-20 xl:pr-7 py-10 xl:py-20 lg:mb-0  relative">
                 <h2 class="font-display text-[#334155] text-2xl lg:text-3xl xl:text-[40px] lg:text-start  font-bold">
-                    Stand Out With Us?
+                    Stand Out With Us
                 </h2>
                 <!-- Tab Navs -->
                 <nav class="grid gap-8 mt-8 md:mt-8 xl:mt-20" aria-label="Tabs" role="tablist" aria-orientation="vertical">

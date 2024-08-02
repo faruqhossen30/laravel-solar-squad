@@ -15,7 +15,7 @@ class FaqController extends Controller
     public function index()
     {
 
-        $faqs = Faq::latest()->paginate();
+        $faqs = Faq::oldest()->paginate();
         return view('admin.faq.index', compact('faqs'));
     }
 

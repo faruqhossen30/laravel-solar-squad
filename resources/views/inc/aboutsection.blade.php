@@ -1,5 +1,5 @@
 
-<section class="bg-[#E2E8F0] py-8 xl:py-12"  id="aboutussection">
+<section class="bg-[#E2E8F0] py-8 xl:py-12"  id="aboutus">
     <div class="container mx-auto lg:py-10 xl:py-20">
         <div class="grid grid-cols-12 lg:gap-10 lg:px-16 px-3">
             <div class="col-span-12 xl:col-span-6 relative pb-20 lg:pb-32 xl:pb-0">

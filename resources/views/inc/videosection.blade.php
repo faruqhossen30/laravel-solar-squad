@@ -3,7 +3,7 @@
     $site = WebsiteSetting::first();
 @endphp
 
-<section class="bg-[#F1F5F9]" id="videosection">
+<section class="bg-[#F1F5F9]" id="overview">
 
     <div class="">
 

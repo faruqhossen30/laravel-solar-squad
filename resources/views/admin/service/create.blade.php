@@ -15,6 +15,7 @@
                             <div class="col-span-12 lg:col-span-12 bg-white dark:bg-gray-800 p-4 rounded-lg">
                                 <x-form.input label="Title" name="title" />
                                 <x-form.textarea label="Description" name="description" />
+                                <label for="myDropify" class="text-gray-500 dark:text-gray-200 text-sm font-medium mb-2 "> Image size must be (450 * 300)</label>
                                 <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
                                     <input class="dropify" type="file" id="myDropify" name="thumbnail">
                                 </div>

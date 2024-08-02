@@ -19,7 +19,7 @@
             <div>
                 <a href="#">
                     {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
-                    <img src="https://flowbite.com/docs/images/logo.svg" alt="Flobite" class="w-20 h-20 rounded-full ring-2">
+                    <img src="{{asset('img/Group 2.png')}}" alt="Flobite" class="h-20  ">
                 </a>
             </div>
 

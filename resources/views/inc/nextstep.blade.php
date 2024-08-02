@@ -14,7 +14,7 @@ height: auto;
             month, Once we reach our capacity,<br class="hidden xl:block"> onboarding will pause until the following month. Reserve your spot now!
             </br>
         <div class="flex lg:justify-center lg:px-6 px-6 xl:pt-10">
-            <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;"
+            <button type="button"  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;"
                 class="inline-flex justify-center items-center space-x-3 lg:px-[55px] px-3 lg:py-[28px] py-2  text-base bg-white rounded-lg">
                 <p class="text-blue-800 lg:text-[28px] text-lg font-bold font-display">Boost Your Income</p>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-6  text-blue-800">

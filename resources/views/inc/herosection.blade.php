@@ -1,6 +1,6 @@
 @php
     use App\Models\Slider;
-    $sliders = Slider::all();
+    $sliders = Slider::latest()->get();
 @endphp
 <section id="heroSlider" class="owl-carousel owl-theme pb-[40px] lg:pb-[10px] bg-[#F1F5F9]">
     @foreach ($sliders as $key => $item)

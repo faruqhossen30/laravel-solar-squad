@@ -1,7 +1,7 @@
 <section class="sticky top-0 z-50 bg-gray-50 shadow-sm">
     <nav class="container border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <div class="flex flex-wrap items-center justify-between mx-auto py-2">
-            <a href="{{route('homepage')}}" class="flex items-center  rtl:space-x-reverse">
+            <a href="{{ route('homepage') }}" class="flex items-center  rtl:space-x-reverse">
                 <img src="{{ asset('img/Group 2@2x.png') }}" class="h-14" alt="Flowbite Logo" />
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button"
@@ -16,28 +16,28 @@
                 <ul
                     class="flex flex-col   items-center  divide-x-reverse font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
-                        <a href="{{route('homepage')}}"
-                            class="block py-2 px-6 md:p-0 text-gray-900 hover:text-white  font-display hover:bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                        <a href="{{ route('homepage') }}"
+                            class="block py-1 px-6 md:p-0 text-gray-900 hover:text-white  font-display hover:bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#aboutussection"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                        <a href="#aboutus"
+                            class="block py-1 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
                             Us</a>
                     </li>
                     <li>
-                        <a href="#videosection"
-                            class="block py-2 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Overview</a>
+                        <a href="#overview"
+                            class="block py-1 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Overview</a>
                     </li>
                     <li>
-                        <a href="#accordion-color"
-                            class="block py-2 px-6 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
+                        <a href="#faq"
+                            class="block py-1 px-6 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
                     </li>
 
                     <li>
                         <!-- Modal toggle -->
                         <button data-modal-target="static-modal" data-modal-toggle="static-modal"
-                            class="block py-3 px-3 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            class="block py-1 px-3 mb-1 md:p-0 text-gray-900 font-display rounded hover:bg-blue-700 hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                             type="button">
                             Contact Us
                         </button>
@@ -50,9 +50,6 @@
                                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                                     <!-- Modal header -->
                                     <div class="flex items-center justify-between pt-3 pr-3 rounded-t dark:border-gray-600">
-                                        {{-- <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-Get in touch
-                                        </h3> --}}
                                         <button type="button"
                                             class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                             data-modal-hide="static-modal">
@@ -74,7 +71,7 @@ Get in touch
                                                     Get in touch
                                                 </h2>
 
-                                                <form action="{{route('contact.send')}}" method="POST" >
+                                                <form action="{{ route('contact.send') }}" method="POST">
                                                     @csrf
                                                     <div class="grid gap-4 lg:gap-6">
                                                         <!-- Grid -->
@@ -104,7 +101,8 @@ Get in touch
                                                             </div>
 
                                                             <div>
-                                                                <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Phone Number</label>
+                                                                <label for="hs-phone-number-1" class="block mb-2 text-sm text-gray-700 font-medium dark:text-white">Phone
+                                                                    Number</label>
                                                                 <input type="text" name="phone" id="hs-phone-number-1"
                                                                     class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
                                                             </div>
@@ -128,19 +126,19 @@ Get in touch
                                         </div>
                                     </div>
                                     <!-- End Contact Us -->
-
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="hidden lg:block">
+                    <li class="hidden lg:block ">
                         <a href="#"
                             class="block py-3 text-2xl px-3 md:p-0 font-display text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">|</a>
                     </li>
 
 
 
-                    <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;" class="flex items-center bg-[#2563EB] text-white rounded-lg px-3 py-2 space-x-2">
+                    <button type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/solarsquad/book?hide_gdpr_banner=1'});return true;"
+                        class="flex items-center bg-[#2563EB] text-white rounded-lg px-3 py-2 space-x-2">
                         <p>
                             Book Your Call
                         </p>
