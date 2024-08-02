@@ -1,6 +1,6 @@
 <section class="bg-[#F1F5F9] lg:pb-28 pb-6">
 
-    <div class="rounded-lg lg:w-[1380px] mx-auto overflow-x-hidden">
+    <div class="rounded-lg container overflow-x-hidden">
         <div class="container mx-auto bg-[#E2E8F0] py-6 lg:py-[50px] space-y-4">
 
             <h4 class="text-center lg:text-3xl text-2xl font-bold font-display text-[#475569] animate__animated animate__heartBeat">Subscribe</h4>

@@ -46,7 +46,7 @@
             position: absolute;
             top: calc(50% - 26px);
             right: 0;
-            margin-right: -26px !important;
+            margin-right: 13px !important;
             width: 52px;
             height: 52px;
             opacity: .8;
@@ -62,7 +62,7 @@
             position: absolute;
             top: calc(50% - 26px);
             left: 0;
-            margin-left: -26px !important;
+            margin-left: 13px !important;
             width: 52px;
             height: 52px;
             opacity: .8;
@@ -79,6 +79,40 @@
             /* Your CSS styles here */
             font-size: 26px;
             /* Example style */
+        }
+
+        @media (max-width: 768px) {
+            .owl-nav .owl-prev {
+                position: absolute;
+                top: calc(50% - 26px);
+                left: 0;
+                margin-left: -13px !important;
+                width: 52px;
+                height: 52px;
+                opacity: .8;
+                border-radius: 50% !important;
+                background-color: white !important;
+                color: gray !important;
+                --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+                --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+
+            .owl-nav .owl-next {
+                position: absolute;
+                top: calc(50% - 26px);
+                right: 0;
+                margin-right: -13px !important;
+                width: 52px;
+                height: 52px;
+                opacity: .8;
+                border-radius: 50% !important;
+                background-color: white !important;
+                color: gray !important;
+                --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+                --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
         }
 
 
@@ -129,7 +163,7 @@
             position: absolute;
             top: calc(50% - -25px);
             right: 0;
-            margin-right: -26px !important;
+            margin-left: -26px !important;
             width: 52px;
             height: 52px;
             opacity: .8;
@@ -203,24 +237,19 @@
 
         /* For Hero slider */
         #heroSlider .owl-dots {
-            margin-top: -50px !important;
+            margin-top: -40px !important;
             position: relative;
         }
-
-
     </style>
 
 
     <style>
-        @media (max-width: 640px) {
-
-        }
+        @media (max-width: 640px) {}
     </style>
 @endpush
 
-
 @push('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
     <script>
         $(document).ready(function() {
 
@@ -291,12 +320,12 @@
                 dots: false,
                 responsive: {
                     0: {
-                        items: 1
+                        items: 1,
                     },
                     600: {
-                        items: 3
+                        items: 2
                     },
-                    1000: {
+                    1280: {
                         items: 3
                     }
                 }
@@ -313,9 +342,9 @@
                         items: 1
                     },
                     600: {
-                        items: 1
+                        items: 2
                     },
-                    1000: {
+                    1024: {
                         items: 2
                     }
                 }
@@ -330,7 +359,7 @@
                         items: 1
                     },
                     600: {
-                        items: 1
+                        items: 2
                     },
                     1000: {
                         items: 2

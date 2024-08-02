@@ -1,4 +1,4 @@
-<section>
+<section class="sticky top-0 z-50 bg-gray-50 shadow-sm">
     <nav class="container border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <div class="flex flex-wrap items-center justify-between mx-auto py-2">
             <a href="{{route('homepage')}}" class="flex items-center  rtl:space-x-reverse">

@@ -80,7 +80,7 @@
     @yield('content')
     @include('layouts.footer')
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="{{asset('js/jquery-3.6.1.min.js')}}"></script>
 
     <button type="button" id="scrolltop" class=" fixed bottom-5 right-5 hidden animate-pulse  z-50 ">
 
@@ -89,7 +89,6 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
         </svg>
     </button>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
