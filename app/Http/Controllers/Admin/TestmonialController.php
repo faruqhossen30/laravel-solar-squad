@@ -14,7 +14,7 @@ class TestmonialController extends Controller
      */
     public function index()
     {
-        $testmonials = Testmonial::latest()->paginate();
+        $testmonials = Testmonial::oldest()->paginate();
         return view('admin.testmonial.index',compact('testmonials'));
     }
 
@@ -79,11 +79,20 @@ class TestmonialController extends Controller
             'name'        => $request->name,
             'address'     => $request->address,
         ];
+        // if($request->file('thumbnail')){
+        //     $file_name = $request->file('thumbnail')->store('testmonial/thumbnail/');
+        //     $data['thumbnail'] = $file_name;
+        // }
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail/');
+            $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
             $data['thumbnail'] = $file_name;
         }
         Testmonial::firstwhere('id', $id)->update($data);
+        // if($request->file('thumbnail')){
+        //     $file_name = $request->file('thumbnail')->store('testmonial/thumbnail');
+        //     $data['thumbnail'] = $file_name;
+        // }
+        // Testmonial::firstwhere('id', $id)->update($data);
         Session::flash('warning');
         return redirect()->route('testmonial.index')->with('warning', ' testmonial Successfully Updated');
     }

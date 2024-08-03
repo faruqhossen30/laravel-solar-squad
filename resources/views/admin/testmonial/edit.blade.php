@@ -29,7 +29,7 @@
                                 <x-form.textarea label="Project Description" name="description" value="{{ $testmonial->description }}" />
                                 <div class="col-span-12 lg:col-span-4 bg-white  p-4 rounded-lg">
                                     <label for="myDropify" class="text-gray-500 capitalize dark:text-gray-200 text-sm font-medium mb-2 "> Image size must be (300 * 300)</label>
-                                    <input class="dropify" type="file" id="myDropify" name="thumbnail " data-default-file="{{ asset('storage/' . $testmonial->thumbnail) }}">
+                                    <input class="dropify" type="file" id="myDropify" name="thumbnail" data-default-file="{{ asset('storage/' . $testmonial->thumbnail) }}">
                                 </div>
                             </div>
                         </div>
