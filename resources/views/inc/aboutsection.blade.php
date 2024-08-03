@@ -8,7 +8,7 @@
                 </div>
                 <img src="{{ asset('img/money-hand.jpg') }}" class="absolute right-0 -mt-20 lg:-mt-40 border-8 rounded-2xl w-1/2" alt="" srcset="">
             </div>
-            <div class="col-span-12 xl:col-span-6 xl:pl-20 space-y-5 lg:space-y-10">
+            <div class="col-span-12 xl:col-span-6 xl:pl-20 space-y-5 lg:space-y-10 py-6">
                 <div class="space-y-5 lg:space-y-10">
                     <h3 class="text-2xl lg:text-[40px] font-bold font-display text-[#334155]  text-left"  >About Solar Squad</h3>
                     <p class="text-lg lg:text-[24px] font-display  capitalize text-[#475569]  text-justify">At Solar Squad, we are committed to helping individuals like you find the best opportunities to earn extra

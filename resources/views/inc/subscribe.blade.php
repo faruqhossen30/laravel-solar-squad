@@ -1,13 +1,14 @@
 <section class="bg-[#F1F5F9] lg:pb-28 pb-6">
 
     <div class="rounded-lg container overflow-x-hidden">
-        <div class="container mx-auto bg-[#E2E8F0] py-6 lg:py-[50px] space-y-4">
+        <div class="container lg:max-w-[860px] xl:max-w-[1240px] mx-auto bg-[#E2E8F0] py-6 lg:py-[50px] space-y-4">
+        {{-- <div class="container mx-auto bg-[#E2E8F0] py-6 lg:py-[50px] space-y-4"> --}}
 
             <h4 class="text-center lg:text-3xl text-2xl font-bold font-display text-[#475569] animate__animated animate__heartBeat">Subscribe</h4>
             <h6 class="text-center capitalize lg:text-[19px] text-[16px]  font-medium font-display  text-[#475569] animate__animated animate__flipInX">For Solar Squad Promotions And News Updates</h6>
 
 
-            <div  class="flex items-center  justify-center px-6 lg:px-96">
+            <div  class="flex items-center  justify-center px-6 lg:px-52 xl:px-80">
                 <label for="voice-search" class="sr-only">Search</label>
                 <div class="relative w-full">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
