@@ -10,8 +10,6 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\ServiceController;
-use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
-use App\Http\Controllers\Admin\Setting\ChatSectionController;
 use App\Http\Controllers\Admin\Setting\ContactSettingController;
 use App\Http\Controllers\Admin\Setting\SiteSettingController;
 use App\Http\Controllers\Admin\Setting\SocialmediaSettingController;

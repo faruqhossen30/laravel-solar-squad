@@ -37,6 +37,33 @@
 
 @push('styles')
     <style type="text/css">
+        .owl-carousel .owl-stage {
+            display: flex;
+        }
+
+        .article-items {
+            display: flex;
+            flex: 1 0 auto;
+            height: 100%;
+            border-width: 2px;
+        }
+
+
+
+
+
+        .owl-carousel .owl-wrapper {
+            display: flex !important;
+        }
+
+        .owl-carousel .owl-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: initial;
+        }
+
+
         .featureOwlSlider {
             position: relative;
             margin: 0 auto;

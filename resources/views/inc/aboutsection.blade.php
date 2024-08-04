@@ -2,11 +2,11 @@
 <section class="bg-[#E2E8F0] py-8 xl:py-12"  id="aboutus">
     <div class="container mx-auto lg:py-10 xl:py-20">
         <div class="grid grid-cols-12 lg:gap-10 lg:px-16 px-3">
-            <div class="col-span-12 xl:col-span-6 relative pb-20 lg:pb-32 xl:pb-0">
+            <div class="col-span-12 xl:col-span-6 relative pb-20 md:pb-32 lg:pb-32 xl:pb-0">
                 <div class="relative ">
                     <img src="{{ asset('img/solar-panels-system-install.jpg') }}" class="rounded-2xl w-10/12" alt="" srcset="">
                 </div>
-                <img src="{{ asset('img/money-hand.jpg') }}" class="absolute right-0 -mt-20 lg:-mt-40 border-8 rounded-2xl w-1/2" alt="" srcset="">
+                <img src="{{ asset('img/money-hand.jpg') }}" class="absolute right-0 -mt-20 md:-mt-40 lg:-mt-40 border-8 rounded-2xl w-1/2" alt="" srcset="">
             </div>
             <div class="col-span-12 xl:col-span-6 xl:pl-20 space-y-5 lg:space-y-10 py-6">
                 <div class="space-y-5 lg:space-y-10">

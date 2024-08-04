@@ -4,10 +4,9 @@
 @endphp
 <section class="bg-[#F8FAFC] px-3 lg:px-0 hidden xl:block">
     <div class="lg:w-[1515px]  mx-auto lg:py-44 py-10 ">
-        <div id="testMonialSlider" class="owl-carousel owl-theme grid grid-cols-12   ">
-
+        <div id="testMonialSlider" class="owl-carousel owl-theme">
             @foreach ($testmonials as $testmonial)
-                <div class="col-span-12 lg:col-span-6 h-full ">
+                <div class="h-full ">
                     <div class="flex justify-center lg:-mb-[110px] xl:-mb-[80px]">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
                             class=" object-cover  object-top lg:max-h-[220px] lg:min-h-[220px] lg:min-w-[220px] lg:max-w-[220px] max-h-[180px] min-h-[180px] min-w-[180px] max-w-[180px]  border-8 border-white rounded-full "
@@ -15,7 +14,6 @@
                     </div>
 
                     <div class="bg-[#E2E8F0] rounded-3xl  ">
-
                         <div class="flex items-center justify-between px-10  lg:pt-24 pt-14">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="lg:h-24 lg:w-24 h-16 w-16" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px" y="0px" viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
@@ -104,16 +102,16 @@
 
 <section class="bg-[#F8FAFC] px-3 lg:px-0 xl:hidden">
     <div class="py-10 px-5 lg:px-10">
-        <div id="testMonialmobileSlider" class="owl-carousel owl-theme grid grid-cols-12   ">
+        <div id="testMonialmobileSlider" class="owl-carousel owl-theme ">
 
             @foreach ($testmonials as $testmonial)
-                <div class="col-span-12 ">
+                <div class="min-h-full rounded-b-3xl" style="background: rgb(226,232,240); background: linear-gradient(0deg, rgba(226,232,240,1) 43%, rgba(255,255,255,1) 100%);">
                     <div class="flex justify-center -mb-[80px]">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
                             class=" object-cover  object-top  max-h-[180px] min-h-[180px] min-w-[180px] max-w-[180px]  border-8 border-white rounded-full " alt="">
                     </div>
 
-                    <div class="bg-[#E2E8F0] rounded-3xl">
+                    <div class="bg-[#E2E8F0] flex flex-col rounded-3xl min-h-full">
 
                         <div class="flex items-center justify-between px-10 pt-14">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class=" h-16 w-16" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

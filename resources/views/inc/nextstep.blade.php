@@ -1,11 +1,10 @@
 <section id="contactsection" class="overflow-x-hidden bg-[#1E40AF] bg-cover bg-no-repeat" style="background-image: url('img/shave.png');background-position:top right;
 height: auto;
 ">
-
     <div class="lg:py-[50px] py-10  space-y-6 bg-right bg-no-repeat mx-auto  " >
         <h6 class="text-left capitalize px-6 lg:text-center text-white lg:text-[36px] text-3xl font-bold font-display aminate_animated animate__zoomIn"data-aos="fade-left" data-aos-anchor="#example-anchor"
             data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000">Take the Next Step</h6>
-        <h2 class="text-left lg:text-center  text-white text-5xl leading-[60px] lg:text-[80px] lg:leading-[90px] px-6  font-extrabold font-display"data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="300"
+        <h2 class="text-left lg:text-center  text-white text-4xl md:text-6xl leading-[60px] lg:text-[80px] lg:leading-[90px] px-6  font-extrabold font-display"data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="300"
             data-aos-easing="ease-in-sine" data-aos-duration="2000">Book Your Free Consultation</h2>
         <p class="text-left lg:text-center capitalize  text-white lg:text-[20px] px-6 font-medium font-display"data-aos="zoom-in" data-aos-anchor="#example-anchor" data-aos-offset="300"
             data-aos-easing="ease-in-sine" data-aos-duration="2000">Don’t let this incredible opportunity slip away. Book your free consultation call today and get all

@@ -4,7 +4,7 @@
         <!-- Grid -->
         <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16  lg:items-center">
 
-            <div class="col-span-12 xl:col-span-6 px-5 md:px-40 xl:px-20 xl:pr-7 py-10 xl:py-20 lg:mb-0  relative">
+            <div class="col-span-12 xl:col-span-6 px-5 md:px-20 lg:px-40 xl:px-20 xl:pr-7 py-10 xl:py-20 lg:mb-0  relative">
                 <h2 class="font-display text-[#334155] text-2xl lg:text-3xl xl:text-[40px] lg:text-start  font-bold">
                     Stand Out With Us
                 </h2>
