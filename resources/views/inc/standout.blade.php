@@ -11,7 +11,7 @@
                 <!-- Tab Navs -->
                 <nav class="grid gap-8 mt-8 md:mt-8 xl:mt-20" aria-label="Tabs" role="tablist" aria-orientation="vertical">
                     <button type="button"
-                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-white focus:outline-none focus:bg-gray-200 px-2 md:px-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 active"
+                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 px-2 py-3 md:px-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 active"
                         id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1" aria-controls="tabs-with-card-1" role="tab">
                         <span class="flex gap-x-6">
                             <img src="{{ asset('img/patnership.png') }}"
@@ -26,7 +26,7 @@
                     </button>
 
                     <button type="button"
-                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-white focus:outline-none focus:bg-gray-200 px-2 md:px-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 py-3 px-2 md:px-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                         id="tabs-with-card-item-2" aria-selected="false" data-hs-tab="#tabs-with-card-2" aria-controls="tabs-with-card-2" role="tab">
                         <span class="flex gap-x-6">
                             <img src="{{ asset('img/Vector.png') }}"
@@ -42,7 +42,7 @@
                     </button>
 
                     <button type="button"
-                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-white focus:outline-none focus:bg-gray-200 px-2 md:px-4 md:py-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                        class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 py-3 px-2 md:px-4 md:py-4 md:p-2 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                         id="tabs-with-card-item-3" aria-selected="false" data-hs-tab="#tabs-with-card-3" aria-controls="tabs-with-card-3" role="tab">
                         <span class="flex gap-x-6">
                             <img src="{{ asset('img/impact.png') }}"
@@ -77,19 +77,15 @@
                     <!-- Tab Content -->
                     <div class="">
                         <div class="text-start" id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
-                            <img class="shadow-xl w-[90%] xl:max-h-[650px] object-right shadow-gray-200 rounded-xl dark:shadow-gray-900/20 ml-14" src="{{ asset('img/contact.png') }}" alt="Features Image">
+                            <img class="shadow-xl w-[90%] xl:max-h-[650px] object-right shadow-gray-200 rounded-xl dark:shadow-gray-900/20 ml-14" src="{{ asset('img/Partnerships.jpg') }}" alt="Features Image">
                         </div>
 
                         <div id="tabs-with-card-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
-                            <img class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
-                                src="https://images.unsplash.com/photo-1665686306574-1ace09918530?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&h=720&q=80"
-                                alt="Features Image">
+                            <img class="shadow-xl w-[90%] xl:max-h-[650px] object-right shadow-gray-200 rounded-xl dark:shadow-gray-900/20 ml-14" src="{{ asset('img/contact.png') }}" alt="Features Image">
                         </div>
 
                         <div id="tabs-with-card-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
-                            <img class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
-                                src="https://images.unsplash.com/photo-1598929213452-52d72f63e307?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&h=720&q=80"
-                                alt="Features Image">
+                            <img class="shadow-xl w-[90%] xl:max-h-[650px] object-right shadow-gray-200 rounded-xl dark:shadow-gray-900/20 ml-14" src="{{ asset('img/impact.jpg') }}" alt="Features Image">
                         </div>
                     </div>
                     <!-- End Tab Content -->

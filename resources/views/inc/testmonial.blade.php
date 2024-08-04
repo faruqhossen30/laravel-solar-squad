@@ -79,8 +79,9 @@
                                                                    c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="lg:px-12 px-6 text-justify  lg:text-center text-[19px] font-normal font-display text-[#475569] ">
-                            <?php echo substr($testmonial->description, 0, 315); ?></p>
+                        <p class="lg:px-12 px-6 text-justify  lg:text-center text-[19px] font-normal font-display text-[#475569] line-clamp-3 ">
+                            <?php echo substr($testmonial->description, 0, 415); ?>
+                        </p>
 
                         <div class="flex justify-center xl:py-6 lg:py-6 py-10 ">
 
