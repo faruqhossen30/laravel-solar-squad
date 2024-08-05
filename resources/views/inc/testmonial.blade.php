@@ -6,7 +6,7 @@
     <div class="lg:w-[1515px]  mx-auto lg:py-44 py-10 ">
         <div id="testMonialSlider" class="owl-carousel owl-theme">
             @foreach ($testmonials as $testmonial)
-                <div class="h-full ">
+                <div class="h-full rounded-b-3xl" style="background: rgb(226,232,240); background: linear-gradient(0deg, rgba(226,232,240,1) 43%, rgba(255,255,255,1) 100%);">
                     <div class="flex justify-center lg:-mb-[110px] xl:-mb-[80px]">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
                             class=" object-cover  object-top lg:max-h-[220px] lg:min-h-[220px] lg:min-w-[220px] lg:max-w-[220px] max-h-[180px] min-h-[180px] min-w-[180px] max-w-[180px]  border-8 border-white rounded-full "
@@ -77,8 +77,8 @@
                                                                    c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="lg:px-12 px-6 text-justify  lg:text-center text-[19px] font-normal font-display text-[#475569] line-clamp-3 ">
-                            <?php echo substr($testmonial->description, 0, 415); ?>
+                        <p class="lg:px-12 px-6 text-justify  lg:text-center text-[19px] font-normal font-display text-[#475569]">
+                            {{$testmonial->description}}
                         </p>
 
                         <div class="flex justify-center xl:py-6 lg:py-6 py-10 ">
@@ -177,7 +177,7 @@
                             </svg>
                         </div>
                         <p class="px-8 text-start text-[18px] font-normal font-display text-[#475569]">
-                            <?php echo substr($testmonial->description, 0, 315); ?></p>
+                            {{$testmonial->description}}
 
                         <div class="flex justify-center lg:py-6 py-3">
 
