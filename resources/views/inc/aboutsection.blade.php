@@ -10,13 +10,13 @@
             </div>
             <div class="col-span-12 xl:col-span-6 xl:pl-20 space-y-5 lg:space-y-10 py-6">
                 <div class="space-y-5 lg:space-y-10">
-                    <h3 class="text-2xl lg:text-[40px] font-bold font-display text-[#334155]  text-left"  >About Solar Squad</h3>
+                    <h3 class="text-2xl lg:text-[40px] font-bold font-display text-[#334155] capitalize text-left"  >About Solar Squad</h3>
                     <p class="text-lg lg:text-[24px] font-display  capitalize text-[#475569]  text-justify">At Solar Squad, we are committed to helping individuals like you find the best opportunities to earn extra
                         income while supporting clean energy initiatives.
                     </p>
                 </div>
                 <div class="space-y-5 lg:space-y-10">
-                    <h3 class="text-2xl lg:text-[40px] font-bold font-display text-[#334155] text-left">Our Mission</h3>
+                    <h3 class="text-2xl lg:text-[40px] font-bold font-display text-[#334155] capitalize text-left">Our Mission</h3>
                     <p class="text-lg lg:text-[23px] font-display text-[#475569] capitalize text-justify">Our mission is to connect you with the top community solar providers in the industry, ensuring you have access
                         to the most lucrative earning opportunities available. We believe in making sustainable energy solutions accessible and profitable for everyone.</p>
                 </div>

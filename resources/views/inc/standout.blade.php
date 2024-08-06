@@ -19,7 +19,7 @@
                             <span class="grow">
                                 <span
                                     class="block text-lg lg:text-xl font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Partnerships</span>
-                                <span class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200 text-base lg:text-xl">We partner with the best community solar providers to
+                                <span class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 capitalize dark:text-neutral-200 text-base lg:text-xl">We partner with the best community solar providers to
                                     offer you exclusive earning potential.</span>
                             </span>
                         </span>
@@ -34,7 +34,7 @@
                             <span class="grow">
                                 <span
                                     class="block text-lg lg:text-xl font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Support</span>
-                                <span class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200 text-base lg:text-xl">We provide extensive training and ongoing support to
+                                <span class="block mt-1 capitalize text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200 text-base lg:text-xl">We provide extensive training and ongoing support to
                                     help you succeed as a solar energy advisor.
                                 </span>
                             </span>
@@ -50,7 +50,7 @@
                             <span class="grow">
                                 <span
                                     class="block text-lg lg:text-xl font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Impact</span>
-                                <span class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200 text-base lg:text-xl">By joining us, you'll not only enhance your income but
+                                <span class="block mt-1 capitalize text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200 text-base lg:text-xl">By joining us, you'll not only enhance your income but
                                     also contribute to a greener future for generations to come.
                                 </span>
                             </span>

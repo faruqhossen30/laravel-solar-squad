@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\Setting\VideoSettingController;
 use App\Http\Controllers\Admin\Setting\WebsiteSettingController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\SubscribeController;
 use App\Http\Controllers\Admin\TestmonialController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Artisan;
@@ -34,6 +35,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('testmonial',   TestmonialController::class);
     Route::resource('slider',       SliderController::class);
     Route::resource('service',      ServiceController::class);
+    Route::resource('subscribe',    SubscribeController::class);
 
     Route::resource('user',         UserController::class);
 

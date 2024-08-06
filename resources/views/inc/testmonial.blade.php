@@ -7,7 +7,7 @@
         <div id="testMonialSlider" class="owl-carousel owl-theme">
             @foreach ($testmonials as $testmonial)
                 <div class="h-full rounded-b-3xl" style="background: rgb(226,232,240); background: linear-gradient(0deg, rgba(226,232,240,1) 43%, rgba(255,255,255,1) 100%);">
-                    <div class="flex justify-center lg:-mb-[110px] xl:-mb-[80px]">
+                    <div class="flex justify-center lg:-mb-[110px] xl:-mb-[80px] bg-[#F8FAFC] ">
                         <img src="{{ asset('storage/' . $testmonial->thumbnail) }}"
                             class=" object-cover  object-top lg:max-h-[220px] lg:min-h-[220px] lg:min-w-[220px] lg:max-w-[220px] max-h-[180px] min-h-[180px] min-w-[180px] max-w-[180px]  border-8 border-white rounded-full "
                             alt="">
@@ -77,7 +77,7 @@
                                                                    c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="lg:px-12 px-6 text-justify  lg:text-center text-[19px] font-normal font-display text-[#475569]">
+                        <p class="lg:px-12 px-6 text-justify  lg:text-center capitalize text-[19px] font-normal font-display text-[#475569]">
                             {{$testmonial->description}}
                         </p>
 
@@ -176,7 +176,7 @@
                                                            c-5.08-1.79-9.57-3.27-9.57-11.82C209.95,112.55,218.33,96.3,247.05,72.97L247.05,72.97z" />
                             </svg>
                         </div>
-                        <p class="px-8 text-start text-[18px] font-normal font-display text-[#475569]">
+                        <p class="px-8 text-start capitalize text-[18px] font-normal font-display text-[#475569]">
                             {{$testmonial->description}}
 
                         <div class="flex justify-center lg:py-6 py-3">

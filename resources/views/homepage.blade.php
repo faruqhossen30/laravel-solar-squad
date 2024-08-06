@@ -1,5 +1,10 @@
 @extends('layouts.app')
+
+
 @section('content')
+@if (Session::has('success'))
+    <x-toast.success />
+@endif
     <!----------herosection------------>
     @include('inc.herosection')
     <!----------herosection------------>
