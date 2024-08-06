@@ -8,7 +8,7 @@
             <h6 class="text-center capitalize lg:text-[19px] text-[16px]  font-medium font-display  text-[#475569] animate__animated animate__flipInX">For Solar Squad Promotions
                 And News Updates</h6>
 
-            <form action="{{ route('subscribe.store') }}" method="post">
+            <form action="{{ route('subscribed') }}" method="post">
                 @csrf
                 <div class="flex items-center  justify-center px-6 lg:px-52 xl:px-80">
                     <label for="voice-search" class="sr-only">Search</label>

@@ -66,4 +66,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Artisan::call('storage:link');
         return 'Storage link created successfully!';
     });
+    Route::get('migrate', function () {
+        Artisan::call('migrate');
+        return 'Storage link created successfully!';
+    });
 });
